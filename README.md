@@ -1,15 +1,12 @@
 <p align="center">
-    <img src="https://codesandbox.io/static/img/banner.png?v=2" height="300px">
+    <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp" height="400px">
   </a>
 </p>
 
 &nbsp;
 
 
-An instantly ready, full-featured online IDE for web development on any device
-with a browser. Enabling you to start new projects quickly and prototype
-rapidly. With CodeSandbox, you can create web apps, experiment with code, test
-ideas, and share creations easily.
+Zde je jednoduchý github repositář, kde jsem zálohoval program které jsme dělali ve škole... Jakékoliv programy, které jsem dělal, jakékoliv edity budou synchronizovany tady
 
 ## Other CodeSandbox repositories
 
@@ -26,9 +23,6 @@ sourced.
   
 ## Documentation
 You can find our documentation on our [website](https://codesandbox.io/docs/start)
-
-## Contributors ✨
-
 
 
 ## Thanks

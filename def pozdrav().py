@@ -46,6 +46,8 @@ def obdelnik():
 
 # S tím že se zbavím dvou řádku
 
+#
+
 def obdelnik():
     a = float(input("Zadej první stranu : "))
     b = float(input("Zadej druhou stranu: "))

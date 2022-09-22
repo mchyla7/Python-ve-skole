@@ -6,15 +6,17 @@ def pozdrav():
 
 
 
-#   Datové tipy
-# integer - celočíselný datový typ
-# float - desetiný datový typ
-# string - textový datový typ
-# bool - logický datový typ, může být nabýt dvou hodnot True/False
+#* Datové tipy
+#  integer - celočíselný datový typ
+#  float - desetiný datový typ
+#  string - textový datový typ
+#  bool - logický datový typ, může být nabýt dvou hodnot True/False
 
-# Proměnná
-# Je to místo v paměti počítače, které má:
-#                                        1.NÁZEV, 2.DATOVÝ TYP, 3.OBLAST PLATNOSTI
+#* Proměnná
+#  Je to místo v paměti počítače, které má:
+#                                         1.NÁZEV 
+#                                         2.DATOVÝ TYP 
+#                                         3.OBLAST PLATNOSTI
 
 
 def soucet2cisel():
@@ -46,7 +48,7 @@ def obdelnik():
 
 # S tím že se zbavím dvou řádku
 
-#
+#Program na výpočet obsahu a obvodu obdelníku
 
 def obdelnik():
     a = float(input("Zadej první stranu : "))

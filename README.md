@@ -23,6 +23,6 @@ Oficiální [Dokumentace](https://docs.python.org/3/) Pythonu
 
 ## Thanks
 
-Díky všem klukům kteří mi helpnuli při drbání se s Pythonem ❤️
+Díky všem klukům kteří mi helpnuli při drbání se s Pythonem 🧡
 
 Made with love ❤️

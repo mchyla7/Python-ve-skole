@@ -48,7 +48,7 @@ def obdelnik():
 
 # S tím že se zbavím dvou řádku
 
-#Program na výpočet obsahu a obvodu obdelníku
+# Program na výpočet obsahu a obvodu obdelníku
 
 def obdelnik():
     a = float(input("Zadej první stranu : "))

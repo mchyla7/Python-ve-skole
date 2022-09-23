@@ -3,7 +3,7 @@
   </a>
 </p>
 
-&nbsp;
+# Python ve škole
 
 
 Zde je jednoduchý github repositář, kde jsem zálohoval programy které jsme dělali ve škole... Jakékoliv programy, které jsem dělal, jakékoliv edity budou synchronizovany tady

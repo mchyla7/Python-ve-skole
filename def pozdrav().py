@@ -54,7 +54,7 @@ def obdelnik():
     a = float(input("Zadej první stranu : "))
     b = float(input("Zadej druhou stranu: "))
     print("Obsah je:" ,a+b, "Obvod je:" ,2*(a+b))   # A vložím obsah = (a*b) a obvod (2*(a+b)) do printu
-obdelnik()
+#obdelnik()
 
 
 
@@ -67,3 +67,42 @@ def prumer():
     c = float(input("Zadej třetí hodnotu: "))
     print("Průměr je: " ,(a+b+c)/3)   # vložím zadání do printu
 #prumer()
+
+
+#     "\n" ----- Tohle je nový řádek
+
+
+
+
+
+def prumer2():
+    a = float(input("Zadej první hodnotu: "))
+    b = float(input("Zadej druhou hodnotu: "))
+    c = float(input("Zadej třetí hodnotu: "))
+    tisk = "➗| Průměr je: " + str((a+b+c)/3)
+    tisk = tisk + "\n"
+    tisk = tisk + "➕| Součet je  " + str(a+b+c)
+    print(tisk)   # vytiskne všechny tři printy
+#prumer2()
+
+
+
+
+
+
+#Program načte jméno a věk první osoby
+#Následně načte jméno a věk druhé osoby
+#Program na jednom řádku vypíše jméno1 + věk1 + jméno2 + věk2
+#Na dalším řádku zobrazí průměrný věk.
+
+
+def jmeno_a_vek():
+    jmeno1 = str(input("První jméno: "))
+    vek1 = str(input("První věk: "))
+    jmeno2 = str(input("Druhé jméno: "))
+    vek2 = str(input("Druhý věk: "))
+    tisk = "Jméno: " + str(jmeno1) + " | Věk: " + str(vek1)
+    tisk = tisk + "\n            ❤"
+    tisk = tisk + "\nJméno: " + str(jmeno2) + " | Věk: " + str(vek2)
+    print(tisk)
+jmeno_a_vek()

@@ -121,4 +121,4 @@ def mocniny():
     vysledek = vysledek +   "\nMocnina prvního čísla: " + str(a*a)
     vysledek = vysledek +   "\nMocnina druhého čísla: " + str(b*b)
     print(vysledek)
-mocniny()
+#mocniny()

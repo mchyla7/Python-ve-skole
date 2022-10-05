@@ -98,11 +98,27 @@ def prumer2():
 
 def jmeno_a_vek():
     jmeno1 = str(input("První jméno: "))
-    vek1 = str(input("První věk: "))
+    vek1 = float(input("První věk: "))
     jmeno2 = str(input("Druhé jméno: "))
-    vek2 = str(input("Druhý věk: "))
+    vek2 = float(input("Druhý věk: "))
     tisk = "Jméno: " + str(jmeno1) + " | Věk: " + str(vek1)
     tisk = tisk + "\n            ❤"
-    tisk = tisk + "\nJméno: " + str(jmeno2) + " | Věk: " + str(vek2)
+    tisk = tisk + "\nJméno: " + str(jmeno2) + " | Věk: " + str(vek2) 
     print(tisk)
-jmeno_a_vek()
+    print("Průměrný věk je: ", + (vek1 + vek2)/2)
+#jmeno_a_vek()
+
+
+
+# součet a součin
+# mocnina prvního a druhého čísla
+
+def mocniny():
+    a = float(input("První číslo: "))
+    b = float(input("Druhé číslo: "))
+    vysledek = "\nSoucet: " + str(a+b)
+    vysledek = vysledek +   "\nSoučin:: " + str(a*b)
+    vysledek = vysledek +   "\nMocnina prvního čísla: " + str(a*a)
+    vysledek = vysledek +   "\nMocnina druhého čísla: " + str(b*b)
+    print(vysledek)
+mocniny()

@@ -102,4 +102,19 @@ def znamky():
         print("Tvoje známka je nedostatečná")
     else:
         print("Chyba - Taková známka není")
-znamky()
+#znamky()
+
+
+
+
+
+# Program načte dvě čísla nejdříve zobrazí větší potom menší - seřadí je
+
+def serad():
+    cislo1 = float(input("Zadej první číslo: "))
+    cislo2 = float(input("Zadej druhé číslo: "))
+    if cislo1 > cislo2:
+        print(cislo1, "----" ,cislo2)
+    else:
+        print(cislo2 ,"----", cislo1)
+serad()

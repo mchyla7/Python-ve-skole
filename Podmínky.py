@@ -16,13 +16,33 @@ def kladne():
         print("Číslo je kladné ✔")
 #kladne()
 
-# Zjišťujeme jestli je číslo kladné nebo nekladné
+#* Zjišťujeme jestli je číslo kladné nebo nekladné
 
 
 def kladne_nekladne():
     cislo = float(input("Číslo: "))
     if cislo>0:
         print("Číslo je kladné ✔")
-    else:
+    else: # Else se používá jen jednou v programu a nelze ho použít víckrát
         print("Číslo není kladné ❌")
-kladne_nekladne()
+#kladne_nekladne()
+
+def kladnecislo():
+    cislo =  float(input("Zadejte číslo: "))
+    if cislo > 0:
+        print("Číslo je kladné")
+    elif cislo == 0:
+        print("Číslo je nula")
+    elif cislo < 0:
+        print("Číslo je záporné")
+#kladnecislo()
+
+
+
+def plnoletost():
+    vek = float(input("Váš věk: "))
+    if vek >= 18:
+        print("Jsi plnoletý 😘")
+    else:
+        print("Nejsi plnoletý 😖")
+plnoletost()

@@ -10,6 +10,9 @@
 
 #Zjišťujeme jestli je číslo kladné
 
+from tkinter import N
+
+
 def kladne():
     cislo = float(input("Číslo: "))
     if cislo>0:
@@ -56,4 +59,28 @@ def absolutnihodnota():
         print("Číslo je od nuly vzdáleno o:", -1*cislo)
     else:
         print("Číslo je vzdáleno od nuly o: ", cislo)
-absolutnihodnota()
+#absolutnihodnota()
+
+
+#Program na zaokrouhlení čísla
+
+def zaokrouhli():
+    cislo = float(input("Zadej číslo: "))
+    pocetmist = int(input("Počet desetiných míst: "))
+    print(round(cislo,pocetmist))
+#zaokrouhli()
+
+#* Program načte číslo s desetiným místem
+#  - Zeptá se jestli chceme zaokrouhlit
+#  - Pokud ano, tak zaokrouhlí číslo a vytiskne ho
+#  - Pokud ne, tak vytiskne číslo, které jsme zadali 
+
+
+def chceszaokrouhlit():
+    cislo = float(input("Zadej číslo: "))
+    ano = str(input("Chceš číslo zaokrouhlit? y/n "))
+    if ano == "y":
+        print(round(cislo))
+    elif ano == "n":
+        print("Tvoje číslo je: ",cislo)
+chceszaokrouhlit()

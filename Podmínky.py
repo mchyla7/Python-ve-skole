@@ -117,4 +117,17 @@ def serad():
         print(cislo1, "----" ,cislo2)
     else:
         print(cislo2 ,"----", cislo1)
+#serad()
+
+
+
+# Program načte tři čísla nejdříve zobrazí větší potom menší - seřadí je
+
+def serad():
+    cislo1 = float(input("Zadej první číslo: "))
+    cislo2 = float(input("Zadej druhé číslo: "))
+    cislo3 = float(input("Zadej třetí číslo: "))
+    if cislo1 > cislo2 > cislo3:
+        print(cislo1, "----" ,cislo2, "----" ,cislo3)
+    elif cislo1 > cislo2 < cislo3:
 serad()

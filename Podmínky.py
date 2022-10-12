@@ -45,4 +45,15 @@ def plnoletost():
         print("Jsi plnoletý 😘")
     else:
         print("Nejsi plnoletý 😖")
-plnoletost()
+#plnoletost()
+
+#Zjístit vzálenost od nuly
+#Program na zjíštění absolutní hodnoty
+
+def absolutnihodnota():
+    cislo = float(input("Zadej číslo: "))
+    if cislo < 0:
+        print("Číslo je od nuly vzdáleno o:", -1*cislo)
+    else:
+        print("Číslo je vzdáleno od nuly o: ", cislo)
+absolutnihodnota()

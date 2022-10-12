@@ -83,4 +83,23 @@ def chceszaokrouhlit():
         print(round(cislo))
     elif ano == "n":
         print("Tvoje číslo je: ",cislo)
-chceszaokrouhlit()
+#chceszaokrouhlit()
+
+
+#* Program na zjištění jakou máš známku slovy
+
+def znamky():
+    znamka = float(input("Zadej svojí známku: "))
+    if znamka == 1:
+        print("Tvoje známka je výborná" )
+    elif znamka == 2:
+        print("Tvoje známka je chválitelná")
+    elif znamka == 3:
+        print("Tvoje známka je dobrá")
+    elif znamka == 4:
+        print("Tvoje známka je dostatečná")
+    elif znamka == 5:
+        print("Tvoje známka je nedostatečná")
+    else:
+        print("Chyba - Taková známka není")
+znamky()

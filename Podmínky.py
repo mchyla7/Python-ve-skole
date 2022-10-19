@@ -135,4 +135,103 @@ def serad():
         print(cislo3, "----" ,cislo2, "----" ,cislo1)
     elif cislo1 <= cislo2 >= cislo3:
         print(cislo3, "----" ,cislo2, "----" ,cislo1)
-serad()
+#serad()
+
+
+#* Převede na malé písmena - text.lower()
+#* Převede na velké písmena - text.upper()
+
+# Program načte text
+# Zeptá se 1.převést na velké, 2. na malé
+# Jiná volba - vytiskne původní text
+
+
+def velkynebomaly():
+    text = input("Zadejte text: ")
+    a = input("Velké písmena - 1, Malé písmena - 2: ")
+    if  a == "1":
+        print(text.upper())
+    elif a == "2":
+        print(text.lower())
+    else:
+        print(text)
+#velkynebomaly()
+
+
+
+
+# Program který pro dvě čísla x,y
+# Spočítá hodnotu 1/(x*y)
+# Ale musí být podmínka že nesmí být číslo 0
+
+def dvecisla():
+    x = float(input("Vložte první číslo: "))
+    y = float(input("Vložte druhé číslo: "))
+    if x*y == 0:
+        print("Nula se nemůže použít")
+    else: 
+        print("Hodnota je: ", 1/(x*y))
+#dvecisla()
+
+
+# Zjistěte, zda číslo x leží uvnitř, před nebo za hranicí intervalu <1,100>
+
+def interval():
+    x = float(input("Zadejte číslo: "))
+    if x  >= 100:
+        print(x, "Nepatří do intervalu <1,100>")
+    elif x <= 0:
+       print(x, "Nepatří do intervalu <1,100>") 
+    else: 
+       print(x, "Patří do intervalu <1,100>")
+    q = input("do you want to continue?: ")
+#interval()
+
+
+# Jsou 4 druhy vstupného:
+# 300,- -- do 10 let včetně
+# 500,- -- od 11-18 let včetně
+# 1000,- -- od 19-60 let včetně
+# 400,- -- od 60 let včetně 
+# Jsi mrtvý lol -- od 100 let včetně
+#
+#Program, který po zadání vstupného spočítá kolik mu bude stát lístek
+
+
+#TODO Opravit 
+#!Chyba opravit doma
+
+def vstupne():
+    vek = int(input("Zadejte věk: "))
+    if vek > 100:
+        print("Rip Boomer")
+    elif vek >= 60:
+        print("Bude tě to stát 400 Kč.")
+    elif vek < 59 and vek >= 18:
+        print("Bude tě to stát 1000 Kč.")
+    elif vek <= 18 and vek >= 11:
+        print("Bude tě to stát 500 Kč.") 
+    else: 
+        vek > 10
+        print("Bude tě to stát 300 Kč.")
+#vstupne()
+
+
+def kalkulator():
+    x = float(input("Zadejte první číslo: "))
+    znamenko = input("Vyberte operaci (+|-|*|/): ")
+    y = float(input("Zadejte druhé číslo: "))
+    if znamenko == "+" :
+        print(x+y)
+    elif znamenko == "-":
+        print(x-y)
+    elif znamenko == "*":
+        print(x*y)
+    elif znamenko == "/":
+        if y == 0:
+            print("! Nulou se nedá dělit !")
+        else:
+            print(x/y)
+    else:
+        print("Zadejte správnou operaci")   
+kalkulator()

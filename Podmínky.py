@@ -10,8 +10,6 @@
 
 #Zjišťujeme jestli je číslo kladné
 
-from tkinter import N
-
 
 def kladne():
     cislo = float(input("Číslo: "))
@@ -234,4 +232,36 @@ def kalkulator():
             print(x/y)
     else:
         print("Zadejte správnou operaci")   
-kalkulator()
+#kalkulator()
+
+def nictakovehotadynemam():
+    try:
+        cislo = float(input("Číslo: "))
+    except:
+        print("Číslo není kladné ✔")
+        return
+    if cislo > 0: 
+        print("Gratiuluji zadal jsi kladné číslo")
+nictakovehotadynemam()
+
+
+
+#  Program načte dvě číselné hodnoty A a B
+#  Program provede výraz a/b
+#  Když je b nebo a 0 tak to napíše chybu
+#  Celý program má být bez if
+#! Nemám tušení co a jak
+
+def dveciselnehodnoty():
+    try:
+        cislo1 = int(input("Zadejte první číslo: "))
+        cislo2 = int(input("Zadejte druhé číslo: "))
+    expect:
+        print("Nezadal jsi číslo")
+        return
+
+    try:
+        print(cislo1/cislo2)
+    except:
+        print("nulou nelze dělit")
+dveciselnehodnoty()

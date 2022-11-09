@@ -19,6 +19,8 @@ def cyklus():
     print(tisk)
 #cyklus()
 
+#  S programem break
+
 def cyklus2():
     tisk = ""
     while(True):
@@ -28,3 +30,14 @@ def cyklus2():
     print(tisk)
 cyklus2()
 
+
+# Bez IFu
+
+def cyklus3():
+    tisk = ""
+    a = float(input("Zadejte kladné číslo: "))
+    while(a > 0):
+        tisk=tisk+str(a) + "; "
+        a = float(input("Zadejte kladné číslo: "))
+    print(tisk)
+cyklus3()

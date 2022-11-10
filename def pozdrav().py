@@ -7,10 +7,10 @@ def pozdrav():
 
 
 #* Datové tipy
-#  integer - celočíselný datový typ
-#  float - desetiný datový typ
-#  string - textový datový typ
-#  bool - logický datový typ, může být nabýt dvou hodnot True/False
+#  integer - celočíselný datový typ - 1
+#  float - desetiný datový typ - 1.0
+#  string - textový datový typ "text"
+#  bool - logický datový typ, může být nabýt dvou hodnot  --  True/False
 
 #* Proměnná
 #  Je to místo v paměti počítače, které má:

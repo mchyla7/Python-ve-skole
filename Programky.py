@@ -69,7 +69,7 @@ def cisla0():
         otazka = input("Chcete skončit? a - pro skončení   ")
         if (otazka.lower() == "a"): break # *neco*.love() ----- převede text na malé písmena
     print(cislavse)
-cisla0()
+#cisla0()
 
 
 
@@ -78,8 +78,7 @@ cisla0()
 # po zadání a se program ukončí
 # a vypíše všechny čísla
 # + 
-# ! jejich průměrnou hodnotu Nefunguje
-#
+# jejich průměr
 
 
 def cisla0():
@@ -89,12 +88,88 @@ def cisla0():
     while(True):
         cislo = input("Zadejte číslo: ")
         cislavse+=  cislo + "; " 
-        soucet+= float(cislo)
+        prumer+= float(cislo)
         pocet += 1
         otazka = input("Chcete skončit? a - pro skončení   ")
-        if (otazka.lower() == "a"): break # *neco*.love() ----- převede text na malé písmena
-        soucet += cislo
+        if (otazka.lower() == "a"): break # /neco/.lower() ----- převede text na malé písmena
+        prumer+= cislo
         pocet + 1
     print(cislavse)
-    print("Průměr je: ", soucet/pocet)
-cisla0()
+    print("Průměr je: ", prumer/pocet)
+#cisla0()
+
+
+
+# # Program načítá čísla
+# Po každém načtení se zeptá jestli chceme program ukončit
+# po zadání "a" se program ukončí
+# a vypíše všechny čísla
+# + 
+# jejich průměr
+# a čtvrté číslo je na novém řádku
+
+def nacitDotaz2():
+    tisk=""; soucet=0; pocet =0; pocetnovyradek=0
+    while(True):
+        cislo= input("Zadej číslo: ")
+        tisk = tisk +  cislo +"; "
+        pocetnovyradek+=1
+        if pocetnovyradek == 3:
+            tisk = tisk + "\n"
+            pocetnovyradek = 0
+        soucet+=float(cislo)
+        pocet+=1  # pocet = pocet +1  
+        volba = input ("Chcete skončit? a - pro skončení   ")
+        if (volba.lower() =="a"): break
+    print(tisk)
+    print("průměr:", soucet/pocet)
+#nacitDotaz2()
+
+
+
+# Program načítá čísla
+# Po každém načtení se zeptá jestli chceme program ukončit
+# po zadání "a" se program ukončí
+# po zadání "a" se zobrazí volba:
+# 1. výpis
+# 2. průměr
+# 3. maximální a minimalní hodnotu
+# 4. počet záporných čísel
+# 5. konec
+
+def nacitamcislaskalkulackou():
+    tisk = ""
+    otazka = ""
+    soucet = 0
+    pocet = 0 
+    pocetzapornych = 0
+    nejvetsi = -999999
+    nejmensi = 9999999
+    while(otazka.lower() != "a"):
+        cislo = float(input("Zadejte číslo: "))
+        tisk += str(cislo) + "; "
+        soucet += (cislo)
+        pocet += 1
+        if(cislo > nejvetsi):
+            nejvetsi = cislo
+        if(cislo < nejmensi):
+            nejmensi = cislo
+        if(cislo < 0):
+            pocetzapornych+= 1
+        otazka = input("Chcete zobrazit nabídku? (a) - ")
+    while(True):    
+        volby = input("1. Výpis, 2. Průměr, 3.Maximální a minimální hodnotu, 4. Počet záporných čísel a 5. Vypne program : ")
+        if volby == "1":
+            print(tisk)
+        elif volby == "2":
+            print("Průměr je: ", soucet/pocet)
+        elif volby == "3":
+            print(f"Nejmenší číslo: {nejmensi} a Největší je: {nejvetsi}")
+        elif volby == "4":
+            print("Počet záporných hodnot: ", pocetzapornych)
+        else:
+            break
+nacitamcislaskalkulackou()
+
+
+

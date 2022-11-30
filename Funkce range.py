@@ -14,4 +14,15 @@ def program():
 def perla():
     for i in "ahoj":
         print(i)
-perla()
+#perla()
+
+
+# Program vygeneruje n čísel od -10 do 10
+
+import random # Přidání knihovny na radnomizaci
+
+def nahodnecisla():
+    pocet = int(input("Kolik čísel se má vygenerovat: "))
+    for i in range(pocet):
+        print(random.randint(-10,10))  # Vygeneruje číslo v daném intervalu
+nahodnecisla()

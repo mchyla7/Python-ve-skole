@@ -24,5 +24,6 @@ import random # Přidání knihovny na radnomizaci
 def nahodnecisla():
     pocet = int(input("Kolik čísel se má vygenerovat: "))
     for i in range(pocet):
-        print(random.randint(-10,10))  # Vygeneruje číslo v daném intervalu
+        print(random.randint(-10,10), end="; ")  # Vygeneruje číslo v daném intervalu
+
 nahodnecisla()

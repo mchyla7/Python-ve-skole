@@ -7,4 +7,11 @@
 def program():
     for i in range(10):
         print(i)
-program()
+#program()
+
+
+
+def perla():
+    for i in "ahoj":
+        print(i)
+perla()

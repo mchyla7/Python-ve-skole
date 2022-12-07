@@ -110,6 +110,21 @@ def testsudecisla():
         if cislo % 2 == 0:
             print(cislo)
         i += 1
-testsudecisla()
+#testsudecisla()
+
+# Program se zeptá na počet čísel nasledně je načte
+# Pote zobrazí jejich průměr a vypíše je
+# Použít cyklus for
 
 
+def program():
+    soucet = 0
+    tisk = ""
+    pocet = int(input("Zadejte počet čísel: "))
+    for i in range(pocet):
+        cislo = input("Zadejte číslo: ")
+        tisk += cislo + "; "
+        soucet += float(cislo)
+    print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
+    print(tisk)
+program()

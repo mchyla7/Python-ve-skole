@@ -55,4 +55,4 @@ def suda1():
         if sude == 1:
             print(i)
         sude = not True
-sude1()
+suda1()

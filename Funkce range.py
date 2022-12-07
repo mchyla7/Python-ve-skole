@@ -24,6 +24,35 @@ import random # Přidání knihovny na radnomizaci
 def nahodnecisla():
     pocet = int(input("Kolik čísel se má vygenerovat: "))
     for i in range(pocet):
-        print(random.randint(-10,10), end="; ")  # Vygeneruje číslo v daném intervalu
+        print(random.randint(-10,10))  # Vygeneruje číslo v daném intervalu
+#nahodnecisla()
 
-nahodnecisla()
+
+
+def nahodnec():
+    pocet = int(input("Kolik čísel se má vygenerovat: "))
+    for i in range(pocet):
+        print(random.randint(-10,10), end="; ")  # Vygeneruje číslo v daném intervalu a bude mezi nimi mezera
+#nahodnec()
+
+# Program vygeneruje pouze sudá čísla
+
+def sude():
+    sude = 1
+    for i in range(2, 101):
+        if sude == 1:
+            print(i)
+        sude = sude * -1 
+#sude()
+
+# Program vygeneruje sudá čísla
+# a mezitím bude kontrolovat jestli máme sudé(pravdu) nebo sude(nepravdu)
+
+
+def suda1():
+    sude = True
+    for i in range(2, 101):
+        if sude == 1:
+            print(i)
+        sude = not True
+sude1()

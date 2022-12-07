@@ -52,7 +52,64 @@ def sude():
 def suda1():
     sude = True
     for i in range(2, 101):
-        if sude == 1:
+        if sude == True:
             print(i)
         sude = not True
-suda1()
+#suda1()
+
+
+# Program vygeneruje sudá čísla potom lichá
+
+def sudaalicha():
+    for i in range(2, 101):
+        print(i)
+    for il in range(1, 101):
+        print(il)
+#sudaalicha()
+
+#Ucitel
+
+def suda2():
+    tisks=""
+    tiskl=""
+    sude = True
+    for i in range(2, 101):
+        if sude == True:
+            tisks+= str(i) + " ;"
+#suda1()
+
+# Operator vrací zbytek po celočíselném dělení
+
+def testsude():
+    cislo = float(input("Zadejte číslo: "))
+    if cislo % 2 == 0:
+        print("sude")
+    else:
+        print("Liché")
+#testsude()
+
+
+
+
+# Program který vygeneruje náhodných 10 sudých čísel
+#! Můj nefunguje
+
+def randomsudy():
+    for i in range(0, 10):
+        cislo = random.randint()
+    if cislo % 2 == 0:
+        print(cislo)
+#randomsudy()       
+#* Učitel
+
+def testsudecisla():
+    pocet = 10
+    i = 0
+    while(i < pocet):
+        cislo = random.randint(1, 1000)
+        if cislo % 2 == 0:
+            print(cislo)
+        i += 1
+testsudecisla()
+
+

@@ -57,7 +57,7 @@ def programbeznuly():
         tisk=tisk+str(a) + "; "
         a = float(input("Zadejte kladné číslo: "))
     print(tisk, " ;",  )
-programbeznuly()
+#programbeznuly()
 
 
 #* Učitelův program

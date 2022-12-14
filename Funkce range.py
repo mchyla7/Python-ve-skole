@@ -110,6 +110,119 @@ def testsudecisla():
         if cislo % 2 == 0:
             print(cislo)
         i += 1
-testsudecisla()
+#testsudecisla()
+
+# Program se zeptá na počet čísel nasledně je načte
+# Pote zobrazí jejich průměr a vypíše je
+# Použít cyklus for
 
 
+def program():
+    soucet = 0
+    tisk = ""
+    pocet = int(input("Zadejte počet čísel: "))
+    for i in range(pocet):
+        cislo = input("Zadejte číslo: ")
+        tisk += cislo + "; "
+        soucet += float(cislo)
+    print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
+    print(tisk)
+#program()
+
+
+# Program se zeptá na počet čísel nasledně je načte
+# Pote zobrazí jejich průměr a vypíše je
+# Použít cyklus for
+# Pokud to nebude číslo tak se znova se opakuje
+
+
+def program():
+    soucet = 0
+    tisk = ""
+    cislo = 0
+    while(True):
+        try:
+            pocet = int(input("Zadejte počet čísel: "))
+            break
+        except:
+            print("Zadal jsi nečíselnou hodnotu")
+        
+    for i in range(int(pocet)):
+                try:
+                    cislo = float(input("Zadejte číslo: "))
+                except:
+                    print("Zadal jsi nečíselnou hodnotu")
+                    return
+                tisk += str(cislo) + "; "  
+                soucet += cislo
+    print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
+    print(tisk)
+#program()
+
+
+
+
+# Program se zeptá na počet čísel nasledně je načte
+# Pote zobrazí jejich průměr a vypíše je
+# Použít cyklus for
+# Pokud to nebude číslo tak se znova se opakuje
+# Program následně zobrazí největší a nejmenší číslo
+
+
+
+def program():
+    soucet = 0
+    mincislo =  99999
+    maxcislo = -99999
+    cislo = 0
+    while(True):
+        try:
+            pocet = int(input("Zadejte počet čísel: "))
+            break
+        except:
+            print("Zadal jsi nečíselnou hodnotu")
+
+    tisk = ""
+    soucet = 0    
+    for i in range(int(pocet)):
+        while(True):
+                try:
+                    cislo = float(input("Zadejte číslo: "))
+                    break
+                except:
+                    print("Zadal jsi nečíselnou hodnotu")
+        tisk = tisk + str(cislo) + "; "  
+        soucet += cislo
+        if (cislo > maxcislo): 
+             maxcislo = cislo   
+        if (cislo < mincislo): 
+           mincislo = cislo   
+
+    print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
+    print(tisk)
+    print(f"Největší číslo je {maxcislo} a nejmenší číslo je {mincislo}")
+#program()
+
+
+
+
+# Program se zeptá na počet čísel, který msuí být jenom jeden znak, nasledně je načte
+# Pote zobrazí jejich průměr a vypíše je
+# Použít cyklus for
+# Pokud to nebude číslo tak se znova se opakuje
+# Program následně zobrazí největší a nejmenší číslo
+
+
+
+def program():
+    pocet = int(input("Zadejte počet znaků: "))
+    tisk = ""
+    for i in range(pocet):
+        while(True):
+            znak = input("Zadej znak: ")
+            if (len(znak)==1):
+                break
+            print("Nezadal jsi znak")
+        tisk+= znak
+    print(tisk)
+program()

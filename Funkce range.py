@@ -19,7 +19,8 @@ def perla():
 
 # Program vygeneruje n čísel od -10 do 10
 
-import random # Přidání knihovny na radnomizaci
+import random  # Přidání knihovny na radnomizaci
+
 
 def nahodnecisla():
     pocet = int(input("Kolik čísel se má vygenerovat: "))
@@ -201,4 +202,181 @@ def program():
     print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
     print(tisk)
     print(f"Největší číslo je {maxcislo} a nejmenší číslo je {mincislo}")
-program()
+#program()
+
+
+
+
+#Program se zepta na počet znaků, následně je načte.
+#Ošetřete, aby byl vždy zadaný pouze jeden znak.
+#len("aaa")   3
+#Poté je vypíše .
+
+def pr10():
+    pocet = int(input("Zadej pocet znaků: "))
+    tisk=""
+    for i in range(pocet):
+        while (True):
+            znak = input("Zadej znak: ")
+            if(len(znak)==1): break
+            print("Nezadal jsi jeden znak!")
+        tisk += znak
+    print (tisk)
+#pr10()
+
+
+# Program se zeptá na počet čísel, následně je vygeneruje
+# Poté zobrazí čísla na řádku oddělená " ;" 
+# Použíjte cyklus for
+# Následně zobrazí počet kladných čísel a počet záporných čísel
+
+def opačko():
+    tisk = ""
+    pocet = int(input("Zadejte počet čísel: "))
+    pocetzapornych = 0
+    pocetkladnych = 0
+    pocetnul = 0
+    for i in range(pocet):
+        cislo = random.randint(-100, 100)
+        tisk += str(cislo) + "; "
+        if(cislo > 0): 
+            pocetkladnych += 1
+        elif (cislo < 0): 
+            pocetzapornych += 1
+        elif (cislo == 0): 
+            pocetnul += 1
+    print(f"{tisk} Počet kladných čísel je {pocetkladnych}, Počet záporných čísel je {pocetzapornych} a nul je celkem {pocetnul}")
+#opačko()
+
+
+
+# Program se zeptá na počet čísel, následně je vygeneruje
+# Poté zobrazí čísla na řádku oddělená " ;" 
+# Použíjte cyklus for
+# Následně zobrazí počet kladných čísel a počet záporných čísel
+# Opravit chyby - Program nespadne když zadám písmeno
+
+def opačko():
+    tisk = ""
+    while(True):
+        try:
+            pocet = int(input("Zadejte počet čísel: "))
+            break
+        except:
+            print("Zadal jsi nečíselnou hodnotu")
+    pocetzapornych = 0
+    pocetkladnych = 0
+    pocetnul = 0
+    for i in range(pocet):
+        cislo = random.randint(-100, 100)
+        tisk += str(cislo) + "; "
+        if(cislo > 0): 
+            pocetkladnych += 1
+        elif (cislo < 0): 
+            pocetzapornych += 1
+        elif (cislo == 0): 
+            pocetnul += 1
+    print(f"{tisk}")
+    print(f"Počet kladných čísel je {pocetkladnych}")
+    print(f"Počet záporných čísel je {pocetzapornych}")
+    print(f"Počet nul je {pocetnul}")
+#opačko()
+
+
+# Program se zeptá na počet čísel, následně je vygeneruje
+# Poté zobrazí čísla na řádku oddělená " ;" 
+# Použíjte cyklus for
+# Následně zobrazí počet kladných čísel a počet záporných čísel
+# Program následně zobrazí největší a nejmenší číslo
+# Opravit chyby - Program nespadne když zadám písmeno
+
+
+
+def opačko():
+    tisk = ""
+    while(True):
+        try:
+            pocet = int(input("Zadejte počet čísel: "))
+            break
+        except:
+            print("Zadal jsi nečíselnou hodnotu")
+    pocetzapornych = 0
+    maxcislo = -999999999
+    mincislo = 999999999
+    
+    pocetkladnych = 0
+    pocetnul = 0
+    for i in range(pocet):
+        cislo = random.randint(-10000, 10000)
+        tisk += str(cislo) + "; "
+        if(cislo > 0): 
+            pocetkladnych += 1
+        elif (cislo < 0): 
+            pocetzapornych += 1
+        elif (cislo == 0): 
+            pocetnul += 1
+
+        if (cislo > maxcislo):
+            maxcislo = cislo
+        if (cislo < mincislo):
+            mincislo = cislo
+    print(f"{tisk}")
+    print(f"Počet kladných čísel je {pocetkladnych}")
+    print(f"Počet záporných čísel je {pocetzapornych}")
+    print(f"Počet nul je {pocetnul}")
+    print(f"Největší číslo je {maxcislo}")
+    print(f"Nejmenší číslo je {mincislo}")
+#opačko()
+
+
+# Program se zeptá na počet čísel, následně je vygeneruje
+# Poté se zeptá co chceme zobrazit
+# Použíjte cyklus for
+# Následně zobrazí počet kladných čísel a počet záporných čísel
+# Program následně zobrazí největší a nejmenší číslo
+# Opravit chyby - Program nespadne když zadám písmeno
+
+
+
+def opako():
+    tisk = ""
+    while(True):
+        try:
+            pocet = int(input("Zadejte počet čísel: "))
+            break
+        except:
+            print("Zadal jsi nečíselnou hodnotu")
+    pocetzapornych = 0
+    maxcislo = -999999999
+    mincislo = 999999999
+    
+    pocetkladnych = 0
+    pocetnul = 0
+    for i in range(pocet):
+        cislo = random.randint(-10000, 10000)
+        tisk += str(cislo) + "; "
+        if(cislo > 0): 
+            pocetkladnych += 1
+        elif (cislo < 0): 
+            pocetzapornych += 1
+        elif (cislo == 0): 
+            pocetnul += 1
+        if (cislo > maxcislo):
+            maxcislo = cislo
+        if (cislo < mincislo):
+            mincislo = cislo
+    while(True):
+        nabidka = input("1. Výpis čísel; 2. Počet kladných čísel; 3. Maximální a minimální hodnota; 4. Počet záporných čísel; 5. Počet nul; 6. Konec programu: ")
+        if nabidka == "1":
+            print(tisk)
+        elif nabidka == "2":
+            print("Počet kladných čísel je: ", pocetkladnych)
+        elif nabidka == "3":
+            print(f"Minimální hodnota je: {mincislo} a  maximální hodnota je: {maxcislo}")
+        elif nabidka == "4":
+            print("Počet záporných čísel je: ", pocetzapornych)
+        elif nabidka == "5":
+            print(f"Počet nul je: {pocetnul}")
+        elif nabidka == "6":
+            break
+opako()

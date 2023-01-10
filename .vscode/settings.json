@@ -8,10 +8,5 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#57084A",
-        "titleBar.activeBackground": "#790B68",
-        "titleBar.activeForeground": "#FFFBFE"
-    },
     "python.analysis.typeCheckingMode": "basic"
 }

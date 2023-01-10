@@ -252,15 +252,15 @@ nictakovehotadynemam()
 #  Celý program má být bez if
 #! Nemám tušení co a jak
 
-#def dveciselnehodnoty():
-try:
+def dveciawlnwhodnoty():
+    try:
         cislo1 = int(input("Zadejte první číslo: "))
         cislo2 = int(input("Zadejte druhé číslo: "))
     expect:
             print("Nezadal jsi číslo")
-            return  
+        return  
     try:
         print(cislo1/cislo2)
     except:
         print("nulou nelze dělit")
-#dveciselnehodnoty()
+dveciselnehodnoty()

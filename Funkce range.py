@@ -4,10 +4,10 @@
 # funkce range(10) - vygeneruje rozsah čísel od 1ky do 10ky
 # funkce range(-10,10) - vygeneruje rozsah celých čísel od -10ky do 9ky
 
-def program():
+def bang():
     for i in range(10):
         print(i)
-#program()
+#bang()
 
 
 
@@ -92,15 +92,7 @@ def testsude():
 
 
 
-# Program který vygeneruje náhodných 10 sudých čísel
-#! Můj nefunguje
-
-def randomsudy():
-    for i in range(0, 10):
-        cislo = random.randint()
-    if cislo % 2 == 0:
-        print(cislo)
-#randomsudy()       
+# Program který vygeneruje náhodných 10 sudých čísel      
 #* Učitel
 
 def testsudecisla():
@@ -118,7 +110,7 @@ def testsudecisla():
 # Použít cyklus for
 
 
-def program():
+def progra():
     soucet = 0
     tisk = ""
     pocet = int(input("Zadejte počet čísel: "))
@@ -128,7 +120,7 @@ def program():
         soucet += float(cislo)
     print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
     print(tisk)
-#program()
+#progra()
 
 
 # Program se zeptá na počet čísel nasledně je načte
@@ -137,7 +129,7 @@ def program():
 # Pokud to nebude číslo tak se znova se opakuje
 
 
-def program():
+def prog():
     soucet = 0
     tisk = ""
     cislo = 0
@@ -158,7 +150,7 @@ def program():
                 soucet += cislo
     print(f"Průměr je {round(soucet/pocet)}")    # Funkce round zaokrouhlí čísla na dvě desetiná místa
     print(tisk)
-#program()
+#prog()
 
 
 
@@ -230,7 +222,7 @@ def pr10():
 # Použíjte cyklus for
 # Následně zobrazí počet kladných čísel a počet záporných čísel
 
-def opačko():
+def opa():
     tisk = ""
     pocet = int(input("Zadejte počet čísel: "))
     pocetzapornych = 0
@@ -246,7 +238,7 @@ def opačko():
         elif (cislo == 0): 
             pocetnul += 1
     print(f"{tisk} Počet kladných čísel je {pocetkladnych}, Počet záporných čísel je {pocetzapornych} a nul je celkem {pocetnul}")
-#opačko()
+#opa()
 
 
 
@@ -292,7 +284,7 @@ def opačko():
 
 
 
-def opačko():
+def opač():
     tisk = ""
     while(True):
         try:
@@ -326,7 +318,7 @@ def opačko():
     print(f"Počet nul je {pocetnul}")
     print(f"Největší číslo je {maxcislo}")
     print(f"Nejmenší číslo je {mincislo}")
-#opačko()
+#opač()
 
 
 # Program se zeptá na počet čísel, následně je vygeneruje
@@ -338,7 +330,7 @@ def opačko():
 
 
 
-def opako():
+def opak():
     tisk = ""
     while(True):
         try:
@@ -379,4 +371,4 @@ def opako():
             print(f"Počet nul je: {pocetnul}")
         elif nabidka == "6":
             break
-opako()
+opak()

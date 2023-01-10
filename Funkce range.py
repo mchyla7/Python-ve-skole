@@ -341,12 +341,13 @@ def opak():
     pocetzapornych = 0
     maxcislo = -999999999
     mincislo = 999999999
-    
     pocetkladnych = 0
     pocetnul = 0
+
     for i in range(pocet):
         cislo = random.randint(-10000, 10000)
         tisk += str(cislo) + "; "
+       
         if(cislo > 0): 
             pocetkladnych += 1
         elif (cislo < 0): 
@@ -357,6 +358,8 @@ def opak():
             maxcislo = cislo
         if (cislo < mincislo):
             mincislo = cislo
+
+
     while(True):
         nabidka = input("1. Výpis čísel; 2. Počet kladných čísel; 3. Maximální a minimální hodnota; 4. Počet záporných čísel; 5. Počet nul; 6. Konec programu: ")
         if nabidka == "1":

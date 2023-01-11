@@ -13,9 +13,10 @@
 
 import random
 
+
 def test():
-    soucet=0
-    kladne=0
+    soucetK=0
+    pocetK=0
     tisk=""
     MaxH=-9999999999
     while(True):
@@ -27,20 +28,19 @@ def test():
             
             
     for i in range(pocetcisel):
-      cislo = random.randint(-100,100)
-      tisk += str(cislo) + "; "
-    if(cislo>MaxH):
-        MaxH=cislo
-    if(cislo>0):
-        soucet+=cislo
-    if(cislo>0):
-        kladne+= 1
+        cislo = random.randint(-100,100)
+        tisk += str(cislo) + "; "
+        if(cislo>MaxH):
+            MaxH=cislo
+        if(cislo>0):
+            pocetK+=1
+            soucetK+= cislo
     while(True):
         nabidka=input("1 Vytiskne hodnoty------2 Zobrazi pocet a prumernou hodnotu-------3 Zobrazi maximalni hodnotu----4 konec")
         if nabidka=="1":
             print("Vase hodnoty",tisk)
         elif nabidka=="2":
-            print("Pocet: ", pocetcisel, "Prumerna Kladna hodnota: ",soucet/kladne)
+            print("Pocet: ", pocetcisel, "Prumerna Kladna hodnota: ",soucetK/pocetK)
         elif nabidka=="3":
             print("Maximalni hodnota:  ", MaxH)
         elif nabidka=="4":

@@ -1,0 +1,51 @@
+#*Test - Skupina A
+
+#Program se zeptá na počet čísel, program ošetří zadání celočíselné hodnoty. Následně se náhodně vygeneruje zadaný počet hodnot v rozmezí -100,100. 
+#Poté program zobrazí volbu: 1. tisk všech hodnot (za sebou, oddělena mezerou), 2. počet a průměrná hodnota kladných čísel, 3. maximální hodnota,   4 .konec.
+#Program se ukončí jen po zadání volby 4.
+
+
+
+
+
+
+
+
+import random
+
+def test():
+    soucet=0
+    kladne=0
+    tisk=""
+    MaxH=-9999999999
+    while(True):
+        try:
+            pocetcisel=int(input("Zadejte pocet cisel"))
+            break
+        except:
+            print("Nezadal jste cislo")
+            
+            
+    for i in range(pocetcisel):
+      cislo = random.randint(-100,100)
+      tisk += str(cislo) + "; "
+    if(cislo>MaxH):
+        MaxH=cislo
+    if(cislo>0):
+        soucet+=cislo
+    if(cislo>0):
+        kladne+= 1
+    while(True):
+        nabidka=input("1 Vytiskne hodnoty------2 Zobrazi pocet a prumernou hodnotu-------3 Zobrazi maximalni hodnotu----4 konec")
+        if nabidka=="1":
+            print("Vase hodnoty",tisk)
+        elif nabidka=="2":
+            print("Pocet: ", pocetcisel, "Prumerna Kladna hodnota: ",soucet/kladne)
+        elif nabidka=="3":
+            print("Maximalni hodnota:  ", MaxH)
+        elif nabidka=="4":
+            break
+
+
+test()
+        

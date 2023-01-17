@@ -5,7 +5,6 @@
 
 # Python ve škole
 
-
 Zde je jednoduchý github repositář, kde jsem zálohoval programy které jsme dělali ve škole... Jakékoliv programy, které jsem dělal, jakékoliv edity budou synchronizovany tady
 
 ## Odkazy
@@ -16,13 +15,16 @@ Nějaké odkazy které by se mohly hodit:
 - [Awesome Python](https://github.com/vinta/awesome-python)
 - [Příručka](https://naucse.python.cz/course/pyladies/)
 
-  
 ## Documentation
-Oficiální [Dokumentace](https://docs.python.org/3/) Pythonu
 
+Oficiální [Dokumentace](https://docs.python.org/3/) Pythonu
 
 ## Thanks
 
 Díky všem klukům kteří mi helpnuli při drbání se s Pythonem 🧡
 
 Made with love ❤️
+
+## Licence
+
+[Apache-2.0](<https://github.com/mchyla7/Python-ve-skole/blob/main/LICENSE.md>)

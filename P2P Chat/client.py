@@ -1,6 +1,7 @@
+
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet import reactor
-from random import randint
+from random 
 
 class Client(DatagramProtocol):
     def __init__(self, host, port):

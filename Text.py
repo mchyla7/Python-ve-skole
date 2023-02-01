@@ -175,4 +175,128 @@ def heslo2():
             heslo += str(random.randint(0,9))
         znak = not znak # Negace hodnoty
     print("Tvoje heslo je ", heslo)
-heslo2()
+#heslo2()
+
+
+
+# Program vytvoří heslo
+# Které bude obsahovat písmena i číslice
+# Bude začínat číslicí a bude končit písmenem
+
+
+
+def heslo3():
+    znaky = "abcdefghijklmnopqrstuvwxyz"
+    cisla = "0123456789"
+    pocet = int(input("Zadejte počet znaků: "))
+    heslo = ""
+    prvniZnak = random.choice(cisla)
+    posledníZnak = random.choice(znaky)
+
+    for i in range(pocet-2):
+        heslo += random.choice(znaky + cisla)
+    heslo = prvniZnak + heslo + posledníZnak
+    print("Tvoje heslo je: ", heslo)
+#heslo3()
+
+
+# Program vytvoří heslo
+# Které bude obsahovat písmena i číslice
+# Bude začínat číslicí a bude končit písmenem
+# Program se zeptá kolik hesel má vygenerovat
+# Program se zeptá, jestli má vygenerovat se speciálním znakem
+
+
+def heslo4():
+    znaky = "abcdefghijklmnopqrstuvwxyz"
+    cisla = "0123456789"
+    specialniZnaky = "?:-/()#*+$"
+    pocet = int(input("Zadejte počet znaků: "))
+    pocetHesel = int(input("Kolik hesel se má vygenerovat: "))
+    pouzitZnak = input("Speciální znak: ")
+
+    for p in range(pocetHesel):
+        heslo = ""
+        prvniZnak = random.choice(cisla)
+        posledníZnak = random.choice(znaky)
+        for i in range(pocet - 2):
+            heslo += random.choice(znaky + cisla)
+        
+        if pouzitZnak == "1":
+            heslo = prvniZnak + random.choice(specialniZnaky) + heslo[1:] + posledníZnak   #Použje první heslo v 223 řádku a vymaže jeden znak 
+
+        else:
+            heslo = prvniZnak + heslo + posledníZnak
+        print(heslo)
+#heslo4()
+
+
+
+# Program načte text
+# Načte hledaný znak
+# Program vrátí, kolikrát se daný znak v textu nachází
+
+
+def hledaniVtextu():
+    text = input("Zadejte text: ")
+    hledat = input("Zadejte hledaný znak: ")
+    pocet = 0
+    for znak in text:
+        if hledat == znak: pocet += 1
+    print("Počet výskytů je ", pocet)
+
+#hledaniVtextu()
+
+
+
+# Program načte text
+# Načte hledaný znak
+# Program s zeptá co chci odstratnit a následně to odstraní
+
+
+def mazaniTextu():
+    text = input("Zadejte text: ")
+    tisk = ""
+    hledat = input("Zadejte znak, který chete smazat: ")
+    for i in text:
+        if hledat != i:
+            tisk += i
+
+    print(tisk)
+
+#mazaniTextu()
+
+
+
+
+# Program načte text
+# Zobrazí volbu
+# 1. Výpis zadaného textu
+# 2. Výpis textu v opačném pořadí
+# 3. Všechny číslice nahradí znakem "*" a zobrazí text
+# 4. Konec
+
+
+def vypis():
+    text = input("Zadejte text: ")
+    while(True):
+        nabidka = input("1. Text, 2. Text naopak, 3. Čísla nahrazené * a daný text, 4. Konec : ")
+        if nabidka == "1":
+            print(text)
+        if nabidka == "2":
+            tiskopac = ""
+            for i in text:
+                    tiskopac = i + tiskopac 
+            print(tiskopac)
+        if nabidka == "3":
+            cisla = "0123456789"
+            tisk = ""
+            for i in text:
+                if i in cisla:tisk+=""
+                else: tisk+=i
+            print(tisk)
+        if nabidka == "4":
+            break
+vypis()
+
+                    

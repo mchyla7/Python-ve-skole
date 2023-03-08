@@ -28,15 +28,89 @@ def text():
     print(text.lower())
     print(text[0].upper())
     print(text[0].upper()+text[1:].lower())
+#text()
 
-text()
 
-
-# PRogram načte text
+# Program načte text
 # Liché znaky budou velkým písmenem
 # Sudé budou malým
 
 
 def sude():
     text = input("Zadjete text: ")
-    while()
+    text2 = ""
+    velke = True
+    for i in text:
+        if velke:
+            text2 += i.upper()
+        else:
+            text2 += i.lower()
+        velke = not velke
+    print(text2)
+#sude()
+
+
+# Program načte text
+# Odstraní případné mezery před a za textem - strip()
+# Text zobrazí pod sebou
+
+def mezery():
+    text = input("Zadejte text: ")
+    text = text.strip()
+    for znak in text:
+        print(znak)
+#mezery()
+
+# Program načte text a zeptá se na hledaný řetězec.
+# Následně zobrazí počet výskytů hledaného řetězce.
+# text.count(hledaný text) - vrátí počet výskytů
+
+def google():
+    text = input("Zadejte text: ")
+    hledani = input("Zadejte co hledáte: ")
+    pocet = text.count(hledani)
+    print(f"Počet je {pocet}")
+#google()
+
+# Program načte text a zeptá se na hledaný řetězec
+# Následně zobrazí počet výskytůhledaného řetězce.
+# Poté se opět zeptá na hledaný řetězce
+# Program napíše na které pozici se daný znak vyskytuje poprvé
+# Program se ukončí pokus hledaný řetězec je prázdný
+
+def googleswhile():
+    text = input("Zadejte text: ")
+    while(True):
+        hledani = input("Zadejte co hledáte: ")
+        pocet = text.count(hledani)
+        if pocet == "":
+            break
+        print(f"Počet je {pocet}")
+        print(f"Pozice prvního výskytu je {text.index(pocet)}")    
+#googleswhile()
+
+
+# Program načte text a zeptá se na hledaný řetězec
+# Následně zobrazí počet výskytů hledaného řetězce
+# Následně zobrazí pozici v textu, kse se nachází.
+# Například: "ababa" pozice znaku "a": 0,2,4
+
+
+def heldaniz():
+    text = input("Zadejte text: ")
+    hledany = input("Zadejte hledaný znak: ")
+    pocet = text.count(hledany)
+
+    vyskyt = ""
+    print (f"Počet výskytů {pocet}")
+
+    if pocet > 0:
+        p = 0
+        for i in range(pocet):
+            pozice = text.index(hledany.p)
+            vyskyt += str(pozice) + "; "
+            p = pozice + 1 # Určuje od které pozice bude dále hledat
+
+    print(f"Pozice výskytů je {vyskyt}")
+hledaniz()
+

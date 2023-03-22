@@ -1,6 +1,6 @@
 
 #* Metody pro práci s textem
-# len("abc") = 3
+# len("abc") = 3 - napíše počet znaků
 # r="abcefg"
 #* r.upper()   - Převod na velká písmena
 #* r.lower()   - Převod na malá písmena
@@ -162,8 +162,48 @@ def nacitanikravin():
                 print(f"Zank se vyskytuje a jeho první výskyt je na pozici {text.index(znak)}")
             else:
                 print("Znak se zde nevyskytuje")
-                
+
         if (otazka == "5"):
             break
 
-nacitanikravin()
+#nacitanikravin()
+
+
+# Program načte text
+# Pokud obsahuje čísla tak je odstraní
+# vstup "123ahojtykktnicolas"
+# vystup "ahojtykktnicolas"
+
+def nactitext():
+    text = input("Zadejte text: ")
+    if (text == 1,2,3,4,5,6,7,8,9,0):
+        text2 = text.replace("1","").replace("2","").replace("3","").replace("4","").replace("5","").replace("6","").replace("7","").replace("8","").replace("9","").replace("0","")
+        print(text2)
+    else:
+        print(text)
+#nactitext()
+
+#* Učitelův
+
+def odstrancislaoddruhepozice():
+    text = input("Zadejte text: ")
+    text2 = ""
+    for z in text:
+        if (not z.isdigit()):
+            text2 += z
+    print(text2)
+#odstrancislaoddruhepozice()
+
+# Druhá možnost
+
+def odstrancislaoddruhepozice2():
+    text = input("Zadejte text: ")
+    cisla = "0123456789"
+    for z in cisla:
+        text = text.replace(z, "")
+    print(text)
+#odstrancislaoddruhepozice2()
+
+
+
+

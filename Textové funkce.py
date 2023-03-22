@@ -2,15 +2,15 @@
 #* Metody pro práci s textem
 # len("abc") = 3
 # r="abcefg"
-# r.upper()   - Převod na velká písmena
-# r.lower()   - Převod na malá písmena
+#* r.upper()   - Převod na velká písmena
+#* r.lower()   - Převod na malá písmena
 # r.count(s)  - Počet výskytů s v r
 # r.index(s)  - Pozice 1. výskytu s v r
 # r.index(s,n)- Pozice 1.výskytu s v r od pozice n
 # r.lstrip()  - Odstraní mezery ze začátku
 # r.rstrip()  - Odstraní mezery z konce
-# r.strip()   - Odstraní mezery z obou stran
-# str.replace(old, new]) - Nahrazení textu
+#* r.strip()   - Odstraní mezery z obou stran
+#* str.replace(old, new]) - Nahrazení textu
 # str.isalpha() - Vrátí True pokud jsou všechny znaky písmena a řetězec obsahuje alespoň jeden znak
 # str.isdigit() - Vrátí True pokud jsou všechny znaky jsou číslice a řetězec obsahuje alespoň jeden znak
 # str.islower() - Vrátí True pokud jsou všechny znaky malá písmena a řetězec obsahuje alespoň jeden znak
@@ -87,7 +87,7 @@ def googleswhile():
             break
         print(f"Počet je {pocet}")
         print(f"Pozice prvního výskytu je {text.index(pocet)}")    
-#googleswhile()
+ # type: ignore # type: ignore#googleswhile()
 
 
 # Program načte text a zeptá se na hledaný řetězec
@@ -112,5 +112,58 @@ def heldaniz():
             p = pozice + 1 # Určuje od které pozice bude dále hledat
 
     print(f"Pozice výskytů je {vyskyt}")
-hledaniz()
 
+
+
+# Program načte text
+# Odstraní mezery před a za, ostatní mezery nahradí "_"
+# Vstup "a b c"
+# Výstup "a_b_c"
+
+def nahrazenimezer():
+    text = input("Zadejte text: ")
+    text2 = text.strip().replace(" " , "_")
+    print(text2)
+
+#nahrazenimezer()
+
+
+# Program načte text
+# Poté zobrazí nabídku:
+# 1. Program se zeptá na délku textu
+# 2. Program zobrazí text tak, že první a poslední písmeno bude vždy velkým
+# 3. Program zobrazí text tak, že všechny mezery a čárky budou nahrazeny podtržítkem
+# 4. Program se zeptá na znak, poté zobrazí, zda se znak v textu vyskytuje - Pokud se vyskytuje, program hned zobrazí číslo pozice prvního výskytu znaku
+# 5. Konec
+# Dokud není zadaná žádná volba 5, program se stále vrací k volbě.
+
+def nacitanikravin():
+    text = input("Zadejte text: ")
+
+    while(True):
+        otazka = input("1. Délka textu  ; 2. Celý text a první a poslední písmeno je velkým ; 3. Text a mezery a čárky jsou nahrazeny podtržítkem ; 4. Vyskyt zanku v textu ; 5. Konec  : ")
+        
+        if (otazka == "1"):
+            print(len(text))
+
+        if (otazka == "2"):
+            prvni = text[0].upper()
+            posledni = text[-1].upper()
+            ostatni = text[1:-1]
+            print(prvni+ostatni+posledni)
+
+        if (otazka == "3"):
+            bezhackuamezer = text.strip().replace(" ","_").replace(",", "_")
+            print(bezhackuamezer)
+
+        if (otazka == "4"):
+            znak = input("Zadejte znak: ")
+            if (text.count(znak)>0):
+                print(f"Zank se vyskytuje a jeho první výskyt je na pozici {text.index(znak)}")
+            else:
+                print("Znak se zde nevyskytuje")
+                
+        if (otazka == "5"):
+            break
+
+nacitanikravin()

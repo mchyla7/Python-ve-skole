@@ -205,5 +205,19 @@ def odstrancislaoddruhepozice2():
 #odstrancislaoddruhepozice2()
 
 
+# Program se zeptá na text
+# Z daného textu vezme číslo a uloží
+# Následně jej vytiskne a písmenka nevytiskne
+# vstup "123456axt" výstup "123456"
+#! Nefunguje úplně geniálně ale je to od učitele, takže sere pes
+
+def vytahcisel():
+    text = input("Zadejte text: ")
+    cislo = ""
+    for znak in text:
+        if not znak.isdigit():break
+        cislo += znak
+    print(cislo)
+#vytahcisel()
 
 

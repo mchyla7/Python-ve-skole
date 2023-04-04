@@ -73,10 +73,11 @@ def google():
 #google()
 
 # Program načte text a zeptá se na hledaný řetězec
-# Následně zobrazí počet výskytůhledaného řetězce.
+# Následně zobrazí počet výskytů hledaného řetězce.
 # Poté se opět zeptá na hledaný řetězce
 # Program napíše na které pozici se daný znak vyskytuje poprvé
 # Program se ukončí pokus hledaný řetězec je prázdný
+#! nefungje
 
 def googleswhile():
     text = input("Zadejte text: ")
@@ -86,8 +87,8 @@ def googleswhile():
         if pocet == "":
             break
         print(f"Počet je {pocet}")
-        print(f"Pozice prvního výskytu je {text.index(pocet)}")    
- # type: ignore # type: ignore#googleswhile()
+        print(f"Pozice prvního výskytu je")    
+
 
 
 # Program načte text a zeptá se na hledaný řetězec

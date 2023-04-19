@@ -97,6 +97,9 @@ def nacitac():
 # Odstraní jejcih případné mezery
 #* str.isnumeric - Testuje zda jde text převést na číslo
 
+#  float - desetiný datový typ - 1.0
+#  string - textový datový typ "text"
+
 def JednaAbc():
     text1 = input("Zadejte první hodnotu: ").strip()
     text2 = input("Zadejte druhou hodnotu: ").strip()
@@ -105,6 +108,3 @@ def JednaAbc():
     else:
         print(text1+text2)
 JednaAbc()
-
-
-#

@@ -90,3 +90,21 @@ def nacitac():
         if (otazka == "4"):
             break
 #nacitac()
+
+
+# Program načte dvě hodnoty. Pokud jsou obě číselné pak zobrazí jejich součet
+# Jinak zobrazí spojení obou hodnot 1+1=2 / 1+abc=1abc
+# Odstraní jejcih případné mezery
+#* str.isnumeric - Testuje zda jde text převést na číslo
+
+def JednaAbc():
+    text1 = input("Zadejte první hodnotu: ").strip()
+    text2 = input("Zadejte druhou hodnotu: ").strip()
+    if (text1.isnumeric() and text2.isnumeric()):
+        print(float(text1)+float(text2))
+    else:
+        print(text1+text2)
+JednaAbc()
+
+
+#

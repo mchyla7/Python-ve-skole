@@ -108,3 +108,4 @@ def JednaAbc():
     else:
         print(text1+text2)
 JednaAbc()
+

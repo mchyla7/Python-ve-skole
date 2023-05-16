@@ -22,7 +22,7 @@ def prvniASCII():
 def druhyASCII():
     for i in range(0,10):
         print(str(i),ord(str(i)))
-druhyASCII()
+#druhyASCII()
 
 
 # Vypište velká písmena abecedy z ASCII tabulky
@@ -30,10 +30,25 @@ druhyASCII()
 def tretiASCII():
     for i in range(65,91):
         print(chr(i))
-tretiASCII()
+#tretiASCII()
 
 
 # Program načte text bez diakritiky a zakodujeho tak, že každý znak nahradí znakem o 3 místa posunutým v ASCII Tabulce
 def kodovani():
+    tisk = ""
     text = input(str("Zadejte text: "))
-    
+    for i in text:
+        tisk += chr(ord(i)+3)
+    print(tisk)
+kodovani()
+
+
+# Program který dekoduje výsledek minulého příkladu
+
+def dekodovani():
+    tisk = ""
+    text = input("Zadejte text: ")
+    for i in text:
+        tisk += chr(ord(i)-3)
+    print(tisk)
+dekodovani()

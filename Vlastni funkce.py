@@ -124,4 +124,35 @@ def MainProgram():
             print(cisla)
         elif volba == "4":
             break
-MainProgram() 
+#MainProgram() 
+
+# Napište podprogramy na  zašifrování a dekodování textu a vložte je do hlavního pragramu
+
+def sifra(text):
+    textsifra = ""
+    for i in text:
+        textsifra += chr(ord(i)+3)
+    return(textsifra)
+
+def dekodovani(textsifra):
+    text = ""
+    for y in textsifra:
+        textsifra += chr(ord(y)-3)
+    return(text)
+
+def KodingDekodingTextu():
+    while(True):
+        volba = input("1. Zašifrovat \n2. Dešifrovat \n3. Konec \nVyberte program: ")
+        if volba == "1":
+            text = input("Zadejte text pro zašifrování: ")
+            print (sifra(text), "\n")
+        elif volba=="2":
+            text = input("Zadej text pro dešifrování: ")
+            print(dekodovani(text),"\n")
+        elif volba =="3": 
+            print("Ukončování programu 👋")
+            break
+KodingDekodingTextu()
+
+#! Dekodování nefunguje
+

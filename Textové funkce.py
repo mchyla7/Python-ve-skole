@@ -96,26 +96,6 @@ def googleswhile():
 # Následně zobrazí pozici v textu, kse se nachází.
 # Například: "ababa" pozice znaku "a": 0,2,4
 
-
-def heldaniz():
-    text = input("Zadejte text: ")
-    hledany = input("Zadejte hledaný znak: ")
-    pocet = text.count(hledany)
-
-    vyskyt = ""
-    print (f"Počet výskytů {pocet}")
-
-    if pocet > 0:
-        p = 0
-        for i in range(pocet):
-            pozice = text.index(hledany.p)
-            vyskyt += str(pozice) + "; "
-            p = pozice + 1 # Určuje od které pozice bude dále hledat
-
-    print(f"Pozice výskytů je {vyskyt}")
-
-
-
 # Program načte text
 # Odstraní mezery před a za, ostatní mezery nahradí "_"
 # Vstup "a b c"

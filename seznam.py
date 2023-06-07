@@ -30,3 +30,32 @@ def generace():
     print("Kladná čísla: ", tiskKladne)
     print("Záporná čísla: ", tiskZaporne)
 generace()
+
+
+def seznamFunkce():
+    cisla = []
+    pocet = 3
+
+    for i in range(pocet)
+        cisla.append(random.randint(1,10))
+
+    print("seznam", cisla)
+
+    print("Součet", sum(cisla))
+    print("maX: ", max(cisla))
+    print("min: ", min(cisla))
+    prumer = sum(cisla)/len(cisla)
+    print("Průměr: ", prumer)
+
+    cisla.sort() #Seřadí
+    print("serazene: ", cisla)
+
+    cisla.sort(reverse=True) # Seřadí čísla opačně - sestupně
+    print("Čísla sestupně: ", cisla)
+
+    random.shuffle(cisla) #nahodně zamíchaná čísla
+    print("Náhodně zamíchaná: ", cisla)
+    cislo = random.choice(cisla) # Náhodně vybere číslo
+    print("Náhodně vybrané číslo ze seznamu: ", cislo)
+
+seznamFunkce()

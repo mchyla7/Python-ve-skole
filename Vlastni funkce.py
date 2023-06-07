@@ -156,3 +156,56 @@ KodingDekodingTextu()
 
 #! Dekodování nefunguje
 
+
+# Z následujícího programu vytvořte hlavní program a podprogramy        
+                
+# Program načte text.  
+# Poté zobrazí nabídku:
+# 1.	Program zobrazí délku textu.
+# 2.	Program text zobrazí tak, že první a poslední písmeno bude velkým písmenem.
+# 3.	Program zobrazí text tak, že všechny mezery a čárky budou nahrazeny  podtržítky.
+# 4.	Program se zeptá na znak, poté zobrazí, zda se znak v textu vyskytuje. Pokud se vyskytuje, pak program zobrazí číslo pozice prvního výskytu znaku.
+# 5.	Konec
+# Dokud není zadaná volba 5, program se stále vrací k volbě.
+#Z následujícího programu vytvořte hlavní program a podprogramy        
+        
+        
+
+
+def delkatextu(text):
+    return("Délka textu:",len(text))
+
+def prvniAposledni(text):
+    prvni=text[0].upper()
+    posledni=text[-1].upper()
+    ostatni =text[1:-1]        
+    return(prvni+ostatni+posledni)
+
+def nahrazeni(text):
+    return(text.replace(" ", "_").replace(",", "_"))
+
+def vyskytuje(text):
+    znak=input("Zadej znak  ")
+    if(text.count(znak)>0):
+        return("Znak se vyskytuje.")
+        return("První výskyt je na pozici ",text.index(znak))
+    else:
+        return("Znak se nevyskytuje!!!!!")
+
+
+def shrnuti1():
+    text = input("Zadej text  ")
+    while(True):
+        volba=input("1.delka,2.uprava,3.nahrazeni,4.vzhledavani,5.konec")
+        if(volba=="1"):
+            print(delkatextu)
+        elif(volba=="2"):
+            print(prvniAposledni)
+        elif(volba=="3"):
+            print(nahrazeni)
+        elif(volba=="4"):
+            print(vyskytuje)
+        elif (volba=="5"):
+            print("Ukončování programu 👋")
+            break
+shrnuti1()

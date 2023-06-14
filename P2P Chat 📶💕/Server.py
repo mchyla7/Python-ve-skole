@@ -7,7 +7,7 @@ class Server (DatagramProtocol):
          self. clients = set()
     
     def datagramReceived(self, datagram, addr):
-         instagram = datagram.decode('utf-8')
+         datagram = datagram.decode('utf-8')
          if datagram == "ready":
              self. clients. add(addr)
              self. transport.write ("n".join([str(x) for x in self. clients]),)) addr)
